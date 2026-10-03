@@ -32,13 +32,13 @@ Build an Excel-based procurement model to:
 
 Supplier performance is evaluated using **Quality (40%), Delivery (30%), and Price (30%)** to generate a weighted score and supplier rating.
 
-![Supplier Scoring](images/score.png)
+![Supplier Scoring](score.png)
 
 ### Purchase Order Tracking
 
 POs are tracked against promised and actual delivery dates to identify **On-Time, Late, Overdue, and Open** orders.
 
-![Purchase Order Tracking](images/po.png)
+![Purchase Order Tracking](po.png)
 
 ## Key Results
 
