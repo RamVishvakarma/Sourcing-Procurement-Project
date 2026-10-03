@@ -1,74 +1,48 @@
-Sourcing & Procurement Cycle - Beginner Excel Project
+# Sourcing & Procurement Cycle – Excel Project
 
-A small, end-to-end Excel project that walks through the procurement cycle: find suppliers → check requisitions → compare quotes → raise POs → track delivery → report results.
+An end-to-end beginner Excel project demonstrating the **sourcing and procurement cycle** from supplier evaluation to purchase order delivery and performance reporting.
 
-All suppliers, items, prices and dates are synthetic (made up for learning). No real companies are represented.
+> **Note:** All suppliers, items, prices, and dates are synthetic and created for learning purposes.
 
-File: Beginner_Sourcing_Procurement_Project.xlsx
+## Project Objective
 
-1. Project Goal
+Build an Excel-based procurement model to:
 
-Show a clear understanding of sourcing and procurement by building a working model that:
+- Evaluate and rate suppliers
+- Review Purchase Requisitions (PRs)
+- Compare supplier quotes and select the best-value supplier
+- Track Purchase Orders (POs) against delivery dates
+- Analyse spend, savings, and supplier performance
 
-Evaluates and rates suppliers
-Checks purchase requisitions (PRs) and decides the next action
-Compares supplier quotes and picks the best-value supplier (not just the cheapest)
-Tracks purchase orders (POs) against promised delivery dates
-Summarises spend, savings and supplier performance
-2. Key Terms
-Term	Meaning
-Sourcing	Finding, evaluating and selecting suppliers
-Procurement	The full buying cycle: need → supplier → quote → PO → delivery → payment
-PR (Purchase Requisition)	An internal request to buy something
-RFQ (Request for Quotation)	Asking several suppliers to quote for the same requirement
-PO (Purchase Order)	The formal order sent to the chosen supplier
-Spec	The technical/quality details of what is being bought
-3. Workbook Structure
-#	Sheet	Purpose
-0	Overview	The 5 steps of the cycle and the Excel skill used in each
-1	Suppliers	15 suppliers rated 1-10 on quality, delivery and price → weighted score → rating
-2	Requisitions	15 PRs checked for spec and value → next action
-3	Quote_Comparison	One RFQ (100 ergonomic chairs) with 5 quotes scored and ranked
-4	Purchase_Orders	12 POs with promised vs actual delivery and status
-5	Summary	Spend, savings, on-time delivery and a chart
-4. Business Rules Used
+## Procurement Cycle
 
-Supplier rating (Suppliers sheet)
+**Supplier Evaluation → PR Review → Quote Comparison → Purchase Order → Delivery & Reporting**
 
-Weighted score = (Quality × 40% + Delivery × 30% + Price × 30%) × 10, so the score is out of 100
-80 and above = Preferred | 65 to 79 = Approved | below 65 = Not approved
+## Workbook Sheets
 
-Requisition check (Requisitions sheet)
+| Sheet | Purpose |
+|---|---|
+| Suppliers | Supplier evaluation using quality, delivery, and price |
+| Requisitions | PR validation and next-action decisions |
+| Quote_Comparison | RFQ quote evaluation and supplier ranking |
+| Purchase_Orders | PO delivery and status tracking |
+| Summary | Spend, savings, delivery performance, and dashboard |
 
-Spec missing → Send back - spec missing
-Value at or above ₹1,00,000 → Needs RFQ (3 quotes)
-Value below ₹1,00,000 → Raise PO directly
+## Key Results
 
-Quote evaluation (Quote_Comparison sheet)
+- **15** suppliers evaluated; **3** preferred
+- **15** PRs reviewed; **2** returned for missing specifications
+- **6** PRs required an RFQ
+- **12** POs raised worth **₹10,66,100**
+- **70%** on-time delivery
+- **1** overdue PO
+- RFQ winner: **Sitwell Seating – ₹8,800/chair**
+- **₹20,000 (2.2%)** saving against ₹9,00,000 budget
 
-Suppliers that do not meet the spec are excluded (score = 0)
-Price score = lowest compliant price ÷ supplier's price × 100
-Delivery score = shortest compliant delivery days ÷ supplier's days × 100
-Overall score = Price 50% + Delivery 20% + Supplier score 30%
-Rank 1 = recommended supplier
+## Excel Skills Used
 
-PO status (Purchase_Orders sheet)
+**XLOOKUP | IF/IFS | SUMIFS | COUNTIFS | Weighted Scoring | Data Validation | Conditional Logic | PivotTables | Charts | Date Analysis | Reporting**
 
-On time: delivered on or before the promised date
-Late: delivered after the promised date
-Overdue: not delivered and the promised date has passed
-Open: not delivered yet, but not yet due
-5. Results (with the data provided)
-Metric	Result
-Suppliers evaluated / Preferred	15 / 3
-PRs received	15
-PRs sent back (spec missing)	2
-PRs needing an RFQ	6
-POs raised	12
-Total PO value	₹10,66,100
-On-time delivery	70%
-Overdue POs	1
-RFQ winner	Sitwell Seating at ₹8,800 per chair
-Saving vs ₹9,00,000 budget	₹20,000 (2.2%)
+## Key Learning
 
-Key takeaway: the cheapest bid (₹7,650) failed the spec and was excluded. The winner was not the lowest compliant price (₹7,900) either. Sitwell Seating won on faster delivery (14 days) and a stronger supplier rating, and still came in under budget.
+The project demonstrates that supplier selection should consider **price, delivery, supplier quality, and specification compliance**, rather than choosing the cheapest quote alone.
