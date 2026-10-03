@@ -28,6 +28,18 @@ Build an Excel-based procurement model to:
 | Purchase_Orders | PO delivery and status tracking |
 | Summary | Spend, savings, delivery performance, and dashboard |
 
+### Supplier Scoring
+
+Supplier performance is evaluated using **Quality (40%), Delivery (30%), and Price (30%)** to generate a weighted score and supplier rating.
+
+![Supplier Scoring](images/score.png)
+
+### Purchase Order Tracking
+
+POs are tracked against promised and actual delivery dates to identify **On-Time, Late, Overdue, and Open** orders.
+
+![Purchase Order Tracking](images/po.png)
+
 ## Key Results
 
 - **15** suppliers evaluated; **3** preferred
@@ -38,10 +50,6 @@ Build an Excel-based procurement model to:
 - **1** overdue PO
 - RFQ winner: **Sitwell Seating – ₹8,800/chair**
 - **₹20,000 (2.2%)** saving against ₹9,00,000 budget
-
-## Excel Skills Used
-
-**XLOOKUP | IF/IFS | SUMIFS | COUNTIFS | Weighted Scoring | Data Validation | Conditional Logic | PivotTables | Charts | Date Analysis | Reporting**
 
 ## Key Learning
 
